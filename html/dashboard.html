@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresso Real</title>
+    <link rel="stylesheet" href="../css/dahsboard.css">
+</head>
+<body>
+    <header>
+        <h1>Expresso Real</h1>
+    </header>
+
+    <main>
+        <section class="overview">
+            <h2>Status Geral</h2>
+            <div class="cards">
+                <div class="card on-time">
+                    <h3>Trens no Horário</h3>
+                    <p>8</p>
+                </div>
+                <div class="card delayed">
+                    <h3>Trens Atrasados</h3>
+                    <p>2</p>
+                </div>
+                <div class="card maintenance">
+                    <h3>Em Manutenção</h3>
+                    <p>1</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <h2>Próximas Partidas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trem</th>
+                        <th>Destino</th>
+                        <th>Partida</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>São Paulo</td>
+                        <td>08:30</td>
+                        <td><span class="status on-time">No Horário</span></td>
+                    </tr>
+                    <tr>
+                        <td>202</td>
+                        <td>Campinas</td>
+                        <td>09:00</td>
+                        <td><span class="status delayed">Atrasado</span></td>
+                    </tr>
+                    <tr>
+                        <td>303</td>
+                        <td>Rio de Janeiro</td>
+                        <td>09:45</td>
+                        <td><span class="status maintenance">Manutenção</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="alerts">
+            <h2>Alertas em Tempo Real</h2>
+            <ul>
+                <li>⚠️ Trem 202 com atraso de 15 minutos.</li>
+                <li>🚧 Trem 303 em manutenção programada.</li>
+                <li>✅ Trem 101 partiu no horário previsto.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Expresso Real</p>
+    </footer>
+</body>
+</html>

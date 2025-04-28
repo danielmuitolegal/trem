@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Status dos trens */
+.train-status {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.train-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Cores por status */
+.train-card.on-time {
+    border-top: 5px solid #28a745;
+}
+
+.train-card.delayed {
+    border-top: 5px solid #ffc107;
+}
+
+.train-card.maintenance {
+    border-top: 5px solid #dc3545;
+}
+
+/* Tabela de horários */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alertas */
+.alerts-section ul {
+    list-style-type: none;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.alerts-section ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .train-status {
+        flex-direction: column;
+        align-items: center;
+    }
+}
