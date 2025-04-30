@@ -1,0 +1,64 @@
+* {
+    font-family: sans-serif;
+}
+
+html {
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.register {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.register fieldset {
+    width: 330px;
+    margin: 3%;
+    border-radius: 10px;
+}
+
+.email input {
+    width: 94%;
+    border-radius: 7px;
+    height: 25px;
+}
+
+.senha input {
+    width: 94%;
+    height: 5dvh;
+    border-radius: 10px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.senha input::placeholder {
+    white-space: normal;
+}
+
+.termo {
+    display: flex;
+}
+
+.criarconta {
+    display: flex;
+    justify-content: center;
+}
+
+.criarconta button {
+    width: 94%;
+    padding: 3%;
+    color: white;
+    background-color: rgb(153, 74, 226);
+    border-radius: 20px;
+}

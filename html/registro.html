@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registro.css">
 </head>
+
 <body>
     <header>
         <h1>Registrar</h1>
@@ -13,16 +15,24 @@
     <main>
         <section class="register">
             <fieldset>
-                <p>E-mail</p>
-                <input type="text" placeholder="Digite seu e-mail já cadastrado">
-                <br>
-                <p>Senha</p>
-                <input type="text" placeholder="Sua senha deve conter no mínimo uma letra maiúscula e um número">
+                <div class="email">
+                    <p>E-mail</p>
+                    <input type="text" placeholder="Digite seu e-mail">
+                </div>
+                <div class="senha">
+                    <p>Senha</p>
+                    <input type="text" placeholder="(Sua senha deve conter no mínimo uma letra maiúscula e um número)">
+                </div>
+                <div class="termo">
+                    <input type="checkbox">
+                    <p><strong>Aceito os termos e condições</strong><br>Eu li e aceito os termos e condições de uso do aplicativo</p>
+                </div>
+                <div class="criarconta">
+                    <button>Criar conta</button>
+                </div>                                
             </fieldset>
         </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
+
 </html>
