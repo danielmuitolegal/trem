@@ -1,81 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expresso Real</title>
-    <link rel="stylesheet" href="../css/dahsboard.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
 </head>
-<body>
-    <header>
-        <h1>Expresso Real</h1>
-    </header>
 
-    <main>
-        <section class="overview">
-            <h2>Status Geral</h2>
-            <div class="cards">
-                <div class="card on-time">
-                    <h3>Trens no Horário</h3>
-                    <p>8</p>
+<body>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>App Interface</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="card-container">
+                <div class="card card1">
+                    <div class="header">
+                        <button class="back-btn">&lt;</button>
+                        <div class="profile-pic"></div>
+                        <button class="menu-btn">...</button>
+                    </div>
+                    <div class="user-info">
+                        <p class="name">Lorem name</p>
+                        <p class="location">Ipsum dolot</p>
+                    </div>
+                    <div class="balance">
+                        <p>Lorem ipsum dolot</p>
+                        <h2>$236,678.25</h2>
+                    </div>
+                    <div class="actions">
+                        <button class="icon-btn">+</button>
+                        <button class="icon-btn">🔍</button>
+                        <button class="icon-btn">📊</button>
+                    </div>
+                    <div class="transactions">
+                        <div class="transaction">
+                            <p><b>-15.45</b>Dolor</p>
+                            <small>4 Aug 9:15 am</small>
+                        </div>
+                        <div class="transaction">
+                            <p><b>+20.30</b>Dolor</p>
+                            <small>4 Aug 9:15 am</small>
+                        </div>
+                        <div class="transaction">
+                            <p><b>-10.55</b>Dolor</p>
+                            <small>4 Aug 9:15 am</small>
+                        </div>
+                    </div>
                 </div>
-                <div class="card delayed">
-                    <h3>Trens Atrasados</h3>
-                    <p>2</p>
+
+                <div class="card card2">
+                    <div class="header">
+                        <button class="back-btn">&lt;</button>
+                        <h3>LOREM IPSUM</h3>
+                        <button class="menu-btn">...</button>
+                    </div>
+                    <div class="circle-value">$456.67</div>
+                    <div class="chart-section">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                    <div class="bottom-info">
+                        <div class="info-item">
+                            <p>12/02/2019</p>
+                            <p>+45</p>
+                        </div>
+                        <div class="info-item">
+                            <p>12/02/2019</p>
+                            <p>-18</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card maintenance">
-                    <h3>Em Manutenção</h3>
-                    <p>1</p>
+
+                <div class="card card3">
+                    <div class="header">
+                        <button class="back-btn">&lt;</button>
+                        <h3>LOREM IPSUM</h3>
+                        <button class="menu-btn">...</button>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-info">
+                            <p class="card-number">0000 0000 0000 0000</p>
+                            <p class="name-exp">Name 05 / 20 lorem ipsum dolor</p>
+                        </div>
+                        <button class="add-card">+ Lorem Ipsum dolor sit</button>
+                    </div>
+                    <div class="toggle-switches">
+                        <div class="switch">
+                            <input type="checkbox" id="toggle1" checked />
+                            <label for="toggle1">Lorem ipsum</label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" id="toggle2" checked />
+                            <label for="toggle2">Lorem ipsum</label>
+                        </div>
+                        <div class="switch">
+                            <input type="checkbox" id="toggle3" checked />
+                            <label for="toggle3">Lorem ipsum</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            const ctx = document.getElementById("myChart").getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Apr', 'Jun', 'Aug', 'Oct', 'Feb'],
+                    datasets: [{
+                        data: [/* placeholder data */ 10, 20, 15, 25, 30],
+                        borderColor: '#8A63C2',
+                        backgroundColor: 'rgba(138, 99, 194, 0.2)',
+                        pointBackgroundColor: '#8A63C2',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 5
+                    }]
+                },
+                options: {
+                    plugins: {
+                        legend: { display: false },
+                    },
+                    scales: {
+                        y: { display: false },
+                        x: { display: false }
+                    },
+                }
+            });
+        </script>
+    </body>
 
-        <section class="schedule">
-            <h2>Próximas Partidas</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trem</th>
-                        <th>Destino</th>
-                        <th>Partida</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>101</td>
-                        <td>São Paulo</td>
-                        <td>08:30</td>
-                        <td><span class="status on-time">No Horário</span></td>
-                    </tr>
-                    <tr>
-                        <td>202</td>
-                        <td>Campinas</td>
-                        <td>09:00</td>
-                        <td><span class="status delayed">Atrasado</span></td>
-                    </tr>
-                    <tr>
-                        <td>303</td>
-                        <td>Rio de Janeiro</td>
-                        <td>09:45</td>
-                        <td><span class="status maintenance">Manutenção</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    </html>
 
-        <section class="alerts">
-            <h2>Alertas em Tempo Real</h2>
-            <ul>
-                <li>⚠️ Trem 202 com atraso de 15 minutos.</li>
-                <li>🚧 Trem 303 em manutenção programada.</li>
-                <li>✅ Trem 101 partiu no horário previsto.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Expresso Real</p>
-    </footer>
 </body>
+
 </html>

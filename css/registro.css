@@ -1,64 +1,79 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
 }
 
-html {
-    overflow: hidden;
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
 }
+
+
+.frame {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+    display: flex;
+    gap: 8px;
+}
+
+.flex a {
+    color: #833565;
+}
+
 
 header h1 {
-    font-family: sans-serif;
     font-weight: lighter;
     font-size: 32px;
     text-align: center;
-    position: relative;
-    margin-top: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
 }
 
-.register {
-    position: relative;
-    display: flex;
-    justify-content: center;
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
-.register fieldset {
-    width: 330px;
-    margin: 3%;
-    border-radius: 10px;
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 45px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
-.email input {
-    width: 94%;
-    border-radius: 7px;
-    height: 25px;
+
+button {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 45px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.senha input {
-    width: 94%;
-    height: 5dvh;
-    border-radius: 10px;
-    text-align: justify;
-    padding-bottom: 10px;
+button[type="submit"] {
+    background-color: rgba(233, 209, 255, 0.747);
+    color: rgba(42, 0, 82, 0.747);
 }
 
-.senha input::placeholder {
-    white-space: normal;
-}
-
-.termo {
-    display: flex;
-}
-
-.criarconta {
-    display: flex;
-    justify-content: center;
-}
-
-.criarconta button {
-    width: 94%;
-    padding: 3%;
-    color: white;
-    background-color: rgb(153, 74, 226);
-    border-radius: 20px;
+button[type="submit"]:hover {
+    background-color: rgba(233, 209, 255, 0.9);
 }

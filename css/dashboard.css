@@ -1,117 +1,241 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    background: linear-gradient(135deg, #5267DF, #6A46DF);
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 30px;
-}
-
-h2 {
-    margin-bottom: 15px;
-    color: #007bff;
-}
-
-/* Status dos trens */
-.train-status {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  
+  /* Container for all cards */
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  /* Card styles */
+  .card-container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.train-card {
-    background: white;
-    border-radius: 8px;
+  }
+  
+  .card {
+    background: #F5F5F5;
+    border-radius: 20px;
     padding: 20px;
-    width: 220px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .back-btn, .menu-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #999;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 10px auto;
+  }
+  
+  /* User info */
+  .user-info {
     text-align: center;
-}
-
-/* Cores por status */
-.train-card.on-time {
-    border-top: 5px solid #28a745;
-}
-
-.train-card.delayed {
-    border-top: 5px solid #ffc107;
-}
-
-.train-card.maintenance {
-    border-top: 5px solid #dc3545;
-}
-
-/* Tabela de horários */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-thead {
-    background-color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  .location {
+    font-size: 0.8em;
+    color: #777;
+    margin: 0;
+  }
+  
+  .balance {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .balance p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .balance h2 {
+    margin: 5px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  /* Icons (actions) */
+  .actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  .icon-btn {
+    background: #8A63C2;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
     color: white;
-}
-
-th, td {
-    padding: 12px 15px;
-    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  /* Transaction list */
+  .transactions {
+    margin-top: 20px;
+  }
+  
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    padding: 5px 0;
     border-bottom: 1px solid #ddd;
-}
-
-/* Alertas */
-.alerts-section ul {
-    list-style-type: none;
-    background: white;
+  }
+  
+  .transaction:last-child {
+    border-bottom: none;
+  }
+  
+  /* Second card: Chart section */
+  .card2 {
+    width: 300px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.alerts-section ul li {
-    margin-bottom: 10px;
-    font-size: 16px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #007bff;
+  }
+  
+  .circle-value {
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .chart-section {
+    margin-top: 20px;
+  }
+  
+  #myChart {
+    width: 100% !important;
+    height: 150px !important;
+  }
+  
+  /* Bottom info section in third card */
+  .bottom-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Third card: Card details and switches */
+  .card3 {
+    width: 250px;
+    padding: 20px;
+  }
+  
+  .card-number {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px 0;
+    word-break: break-all;
+  }
+  
+  .name-exp {
+    font-size: 0.8em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .add-card {
+    background-color: #8A63C2;
     color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .train-status {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  
+  .toggle-switches {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Switch style */
+  .switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  input[type="checkbox"] {
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  input[type="checkbox"]:checked {
+    background: #8A63C2;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    top: 1px;
+    left: 1px;
+    transition: 0.3s;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: translateX(20px);
+  }

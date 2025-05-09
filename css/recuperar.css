@@ -1,86 +1,80 @@
-.container .text-center {
-    text-align: center;
-    font-size: 24%;
-    margin-bottom: 50%;
-}
-
-
-
-.recuperar-container * {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-
-.recuperar-container {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    height: 100vh;
+    font-family: sans-serif;
+  }
+  
+  
+  body {
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.recuperar-card {
-    width: 90%;
-    max-width: 350px;
-    padding: 5%;
-    border: 0.1em solid #ddd;
-    border-radius: 8px;
-    background-color: #ffffff;
-}
-
-.recuperar-title {
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+  }
+  
+  
+  div {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  header h1 {
+    font-weight: lighter;
+    font-size: 32px;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 8%;
-}
-
-.recuperar-form {
-    width: 100%;
-}
-
-.recuperar-form-group {
-    margin-bottom: 6%;
-}
-
-.recuperar-form-group label {
+    margin-bottom: 20px;
+  }
+  
+  label {
     display: block;
-    margin-bottom: 3%;
-    font-size: 1em;
-    color: #333;
-}
-
-.recuperar-input-field {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+ 
+  input[type="email"],
+  input[type="text"] {
     width: 100%;
-    padding: 3%;
-    font-size: 1em;
-    border: 0.1em solid #ccc;
-    border-radius: 6px;
-    background-color: #f9f9f9;
-}
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 45px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
 
-.recuperar-send-code-btn {
+  button {
     width: 100%;
-    margin-top: 3%;
-    padding: 3%;
-    background-color: #222;
-    color: #fff;
+    padding: 15px 20px;
     border: none;
-    border-radius: 6px;
-    font-size: 1.1em;
+    border-radius: 45px;
+    font-size: 16px;
     cursor: pointer;
-}
-
-.recuperar-submit-btn {
-    width: 100%;
-    margin-top: 4%;
-    padding: 3%;
-    background-color: #8b39c2;
-    color: #fff;rgb(155, 76, 175)
-    border: none;
-    border-radius: 6px;
-    font-size: 1.2em;
-    cursor: pointer;
-}
+    transition: background-color 0.3s;
+  }
+  
+  button[type="button"] {
+    background-color: rgba(42, 0, 82, 0.747);
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: rgba(42, 0, 82, 0.9);
+  }
+  
+  button[type="submit"] {
+    background-color: rgba(233, 209, 255, 0.747);
+    color: rgba(42, 0, 82, 0.747);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgba(233, 209, 255, 0.9);
+  }
