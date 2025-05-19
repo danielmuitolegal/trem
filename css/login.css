@@ -76,4 +76,19 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: rgba(233, 209, 255, 0.9);
+<<<<<<< HEAD
+=======
+}
+
+.flex a, img {
+    width: 86%;
+    text-align: center;
+}
+
+.socials {
+    justify-content: center;
+    margin-top: 5%;
+    gap: 10%;
+
+>>>>>>> 8bfa5809ac903a14943be506190d970ad6b06cdf
 }
