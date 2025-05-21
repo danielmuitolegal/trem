@@ -48,8 +48,7 @@ label {
 }
 
 
-input[type="email"],
-input[type="text"] {
+.frame input {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -69,15 +68,13 @@ button {
     transition: background-color 0.3s;
 }
 
-button[type="submit"] {
+#loginEnviar {
     background-color: rgba(233, 209, 255, 0.747);
     color: rgba(42, 0, 82, 0.747);
 }
 
-button[type="submit"]:hover {
+#loginEnviar:hover {
     background-color: rgba(233, 209, 255, 0.9);
-<<<<<<< HEAD
-=======
 }
 
 .flex a, img {
@@ -90,5 +87,4 @@ button[type="submit"]:hover {
     margin-top: 5%;
     gap: 10%;
 
->>>>>>> 8bfa5809ac903a14943be506190d970ad6b06cdf
 }

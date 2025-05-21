@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,50 +8,68 @@
     <link rel="stylesheet" href="../css/dashboard.css">
 </head>
 </head>
+
 <body>
-    <nav class="flex">
-            <a id="inicio" href="#">INÍCIO</a>
-            <div class="flex macaco">
-                <a href="#">AJUDA</a>
-                <a href="#">MINHAS PASSAGENS</a>
-            </div>
-    </nav>
+   
     <header>
-        <h2>
-            Compre sua passagem:
-        </h2>
-        <div>
-            <div class="flex">
-                <div class="l">
-                    <h2>ORIGEM</h2>
-                    <input type="text">
-                </div>
-                <div class="r">
-                    <h2>DESTINO</h2>
-                    <input type="text">
-                </div> 
+        <nav class="flex">
+            <a id="inicio" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a>
+            <div class="flex macaco">
+                <a href="http://127.0.0.1:3000/html/ajuda.html">AJUDA</a>
+                <a href="http://127.0.0.1:3000/html/minhasviagens.html">MINHAS PASSAGENS</a>
             </div>
-            <div class="flex">
-                <div class="l">
-                    <h2>IDA</h2>
-                    <input type="text">
+        </nav>
+        <div class="everton">
+            <div class="passagem">
+                <p>
+                    Compre sua passagem:
+                </p>
+                <div class="flex passagem-box">
+                    <div class="l">
+                        <label for="origem">ORIGEM</label>
+                        <input type="text" id="origem" placeholder="Cidade de origem">
+                    </div>
+
+                    <div class="r">
+                        <label for="destino">DESTINO</label>
+                        <input type="text" id="destino" placeholder="Cidade de destino">
+                    </div>
                 </div>
-                <div class="r">
-                    <h2>VOLTA</h2>
-                    <input type="text">
+
+                <div class="flex passagem-box">
+                    <div class="l">
+                        <label for="ida">DIA DE IDA</label>
+                        <input type="date" id="ida">
+                    </div>
+                    <div class="r">
+                        <label for="volta">DIA DE VOLTA</label>
+                        <input type="date" id="volta">
+                    </div>
                 </div>
-            </div>
-            <div class="flex">
-                <div class="l">
-                    <h2>PASSAGEIROS</h2>
-                    <input type="text">
-                </div>
-                <div class="r">
-                    <h2>CLASSE</h2>
-                    <input type="text">
+
+                <div class="flex passagem-box">
+                    <div class="l">
+                        <label for="passageiros">PASSAGEIROS</label>
+                        <input type="text" id="passageiros" placeholder="Quantidade de passagens">
+                    
+                    
+                    </div>
+
+                    <div class="r">
+                        <label for="classe">CLASSE</label>
+                        <select name="classe" id="classe">
+                            <option value="">Selecione a classe</option>
+                            <option value="economica">Econômica</option>
+                            <option value="conforto">Conforto</option>
+                            <option value="executiva">Executiva</option>
+                            <option value="primeira-classe">Primeira classe</option>
+                            <option value="luxo">Luxo</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 </body>
+<script src="../js/dashboard.js"></script>
 </html>

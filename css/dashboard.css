@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 nav {
@@ -12,7 +12,7 @@ nav {
   padding: 10px;
   white-space: nowrap;
   font-size: 70%;
-  
+
 }
 
 #inicio {
@@ -36,4 +36,49 @@ nav {
 
 header {
   background-color: #eaddff;
+}
+
+.passagem {
+  padding: 20px;
+  border-radius: 10px;
+  width: 95%;
+}
+
+.passagem p {
+  margin: 2%;
+}
+
+.everton {
+  display: flex;
+  justify-content: center;
+}
+
+.l,
+.r {
+  flex-direction: column;
+  display: flex;
+  background-color: white;
+  margin-bottom: 2%;
+  padding: 2%;
+  width: 50%;
+}
+
+.l {
+  border-radius: 999px 0px 0px 999px;
+}
+
+.r {
+  margin-left: 1%;
+  border-radius: 0px 999px 999px 0px;
+}
+
+.passagem input {
+  width: 90%;
+  border-style: none;
+  color: grey;
+}
+
+.passagem select {
+  border-style: none;
+  color: grey;
 }
