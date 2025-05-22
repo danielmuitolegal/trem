@@ -45,7 +45,24 @@ header {
 }
 
 .passagem p {
-  margin: 2%;
+  padding-bottom: 2%;
+  color: #4f378a;
+}
+
+.passagem label {
+  color: #4f378a;
+  font-size: 95%;
+}
+
+.passagem input {
+  width: 90%;
+  border-style: none;
+  color: grey;
+}
+
+.passagem select {
+  border-style: none;
+  color: grey;
 }
 
 .everton {
@@ -72,13 +89,34 @@ header {
   border-radius: 0px 999px 999px 0px;
 }
 
-.passagem input {
-  width: 90%;
-  border-style: none;
-  color: grey;
+.butao {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
 }
 
-.passagem select {
-  border-style: none;
-  color: grey;
+.butao button {
+  background-color: #4f378a;
+  color: white;
+  border-radius: 999px;
+  padding: 0.5% 2%;
+}
+
+main {
+  background-color: #4f378a;
+}
+
+main p {
+  padding: 3% 0% 3% 3%;
+  color: #eaddff;
+}
+
+.promocao {
+  text-align: center;
+}
+
+.promocao img {
+  width: 70%;
+  margin: 2% 0% 0.5% 0%;
+  border-radius: 10px; 
 }
