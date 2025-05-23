@@ -93,6 +93,9 @@ header {
   display: flex;
   justify-content: center;
   padding-bottom: 2%;
+  gap: 2%;
+  margin: 0% 2% 0% 2%;
+
 }
 
 .butao button {
@@ -100,6 +103,8 @@ header {
   color: white;
   border-radius: 999px;
   padding: 0.5% 2%;
+  border-style: none;
+  font-size: 75%;
 }
 
 main {
@@ -118,5 +123,14 @@ main p {
 .promocao img {
   width: 70%;
   margin: 2% 0% 0.5% 0%;
-  border-radius: 10px; 
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #eaddff;
+}
+
+footer p {
+  padding: 3% 0% 3% 3%;
+  color: #4f378a;
 }
