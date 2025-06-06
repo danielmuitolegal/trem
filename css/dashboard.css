@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 body {
@@ -125,6 +126,8 @@ header {
 main {
   background-color: #4f378a;
   padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
 }
 
 main p {
@@ -155,13 +158,23 @@ footer p {
   color: #4f378a;
 }
 
+@media (max-width: 900px) {
+  html {
+    overflow-y: hidden;
+  }
+}
+
 @media (min-width: 900px) {
+  html {
+    overflow-y: scroll;
+  }
+
   main {
     height: 50%;
     display: flex;
     flex-direction: column;
   }
-  
+
   main p {
     text-align: center;
   }
