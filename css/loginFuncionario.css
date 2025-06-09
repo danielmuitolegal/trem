@@ -30,14 +30,8 @@ body {
     text-decoration: none;
     color: #ffffff;
     margin-top: 20%;
-    padding: 2%;
     background-color: rgb(170, 147, 212);
     border-radius: 100px;
-    transition: background-color 0.3s;
-}
-
-.meio:hover {
-    background-color: rgb(197, 183, 223);
 }
 
 .flex {
