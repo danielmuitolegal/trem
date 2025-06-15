@@ -162,6 +162,16 @@ footer p {
   body {
     overflow-y: hidden;
   }
+  .promocao {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promocao img {
+    width: 70%;
+    margin: 2px
+  }
 }
 
 @media (min-width: 900px) {
