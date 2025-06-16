@@ -1,7 +1,45 @@
+html,
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0e5fa;
-  margin: 20px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #4f378a;
+    color: white;
+    gap: 3%;
+    padding: 10px;
+    justify-content: space-between;
+    white-space: nowrap;
+    font-size: 70%;
+}
+
+#textnav {
+    color: #FFFF;
+    text-decoration: none;
+}
+
+#select {
+    color: #faf6ff;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
 }
 
 h2 {
@@ -29,10 +67,10 @@ label {
 input[type="text"], input[type="date"] {
   width: 100%;
   padding: 8px 10px;
-  margin-top: 8px;
+  margin-top: 2px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 30px;
 }
 
 .buttons {
@@ -43,9 +81,9 @@ input[type="text"], input[type="date"] {
 button {
   background-color: #4e1c80;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border: none;
-  border-radius: 4px;
+  border-radius: 30px;
   cursor: pointer;
   font-weight: bold;
 }

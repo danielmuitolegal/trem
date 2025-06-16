@@ -19,20 +19,6 @@ body {
 }
 
 nav {
-<<<<<<< HEAD
-  background-color: #4f378a;
-  color: rgb(255, 103, 103);
-  gap: 3%;
-  padding: 10px;
-  justify-content: space-between;
-  white-space: nowrap;
-  font-size: 70%;
-}
-
-#textnav {
-  color: #ffffff;
-  text-decoration: none;
-=======
     background-color: #4f378a;
     color: white;
     gap: 3%;
@@ -45,7 +31,6 @@ nav {
 #textnav {
     color: #FFFF;
     text-decoration: none;
->>>>>>> 0eb7a730ecf48454608ed330648e91008dab1aa1
 }
 
 #select {
