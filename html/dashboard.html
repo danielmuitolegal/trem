@@ -1,97 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Início - funcionário</title>
+    <link rel="stylesheet" href="/css/css-funcionarios/dashboard.css">
 </head>
-</head>
-
 <body>
     <nav class="flex">
-        <a id="inicio" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a>
-        <div class="flex macaco">
-            <a href="http://127.0.0.1:3000/html/ajuda.html">AJUDA</a>
-            <a href="http://127.0.0.1:3000/html/minhasviagens.html">MINHAS PASSAGENS</a>
-        </div>
+        <a id="select" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a>
+        <a id="textnav" href="">GESTÃO DE ROTAS</a>
+        <a id="textnav" href="">MANUTENÇÃO</a>
+        <a id="textnav" href="">RELATÓRIOS</a>
+        <a id="textnav" href="">ALERTAS</a>
     </nav>
     <header>
-
-        <div class="everton">
-            <div class="passagem">
-                <p>
-                    Compre sua passagem:
-                </p>
-                <div class="flex passagem-box">
-                    <div class="l">
-                        <label for="origem">ORIGEM</label>
-                        <input type="text" id="origem" placeholder="Cidade de origem">
-                    </div>
-
-                    <div class="r">
-                        <label for="destino">DESTINO</label>
-                        <input type="text" id="destino" placeholder="Cidade de destino">
-                    </div>
-                </div>
-
-                <div class="flex passagem-box">
-                    <div class="l">
-                        <label for="ida">DIA DE IDA</label>
-                        <input type="date" id="ida">
-                    </div>
-                    <div class="r">
-                        <label for="volta">DIA DE VOLTA</label>
-                        <input type="date" id="volta">
-                    </div>
-                </div>
-
-                <div class="flex passagem-box">
-                    <div class="l">
-                        <label for="passageiros">PASSAGEIROS</label>
-                        <input type="text" id="passageiros" placeholder="Quantidade de passagens">
-
-
-                    </div>
-
-                    <div class="r">
-                        <label for="classe">CLASSE</label>
-                        <select name="classe" id="classe">
-                            <option value="">Selecione a classe</option>
-                            <option value="economica">Econômica</option>
-                            <option value="conforto">Conforto</option>
-                            <option value="executiva">Executiva</option>
-                            <option value="primeira-classe">Primeira classe</option>
-                            <option value="luxo">Luxo</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="butao">
-            <button type="submit" onclick="">BUSCAR</button>
-        </div>
+        
     </header>
-
     <main>
-        <p>Destaques e promoções:</p>
-        <div class="promocao">
-            <a href="#"><img src="../img/feriasinverno.png" alt="Promoção Férias de Inverno"></a>
-            <a href="#"><img src="../img/feriasverao.png" alt="Promoção Férias de Verão"></a>
-        </div>
-    </main>
-    <footer>
-        <p>Destinos populares:</p>
-        <div class="butao dest">
-            <button>RIO DE JANEIRO</button>
-            <button>SÃO PAULO</button>
-            <button>BAHIA</button>
-            <button>SANTA CATARINA</button>
-            <button>PARANÁ</button>
-        </div>
-    </footer>
-</body>
-<script src="../js/dashboard.js"></script>
 
+    </main>
+</body>
 </html>
