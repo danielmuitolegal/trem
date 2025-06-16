@@ -21,9 +21,9 @@ body {
 nav {
   background-color: #4f378a;
   color: white;
-  justify-content: baseline;
   gap: 3%;
   padding: 10px;
+  justify-content: space-between;
   white-space: nowrap;
   font-size: 70%;
 }
