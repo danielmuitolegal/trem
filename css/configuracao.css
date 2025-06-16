@@ -20,7 +20,7 @@ body {
 
 nav {
   background-color: #4f378a;
-  color: white;
+  color: rgb(255, 103, 103);
   gap: 3%;
   padding: 10px;
   justify-content: space-between;
@@ -29,12 +29,12 @@ nav {
 }
 
 #textnav {
-  color: #FFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
 #select {
-    color: #cfb5f8;
+    color: #faf6ff;
     text-decoration: none;
 }
 
