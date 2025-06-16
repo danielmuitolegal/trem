@@ -34,18 +34,76 @@ nav {
 }
 
 #select {
-    color: #cfb5f8;
-    text-decoration: none;
+  color: #cfb5f8;
+  text-decoration: none;
 }
 
 .flex {
   display: flex;
 }
 
-.settings {
+iframe {
+  display: block;
 }
 
-.macaco a {
-  text-decoration: none;
-  color: white;
+.status-geral {
+  background-color: #4f378a;
+  color: #eaddff;
+  text-align: center;
+  padding: 3%;
+}
+
+main {
+  background-color: #eaddff;
+}
+
+.status {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.info-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  min-width: 100%;
+}
+
+.info {
+  margin: 0% 0.1%;
+  min-width: 50%;
+}
+
+.info-full {
+  margin: 0% 0.1%;
+  min-width: 100%;
+}
+
+.inforoxo-text {
+  background-color: #4f378a;
+  color: #eaddff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+
+.infolilas-text {
+  background-color: #cfb5f8;
+  color: #4f378a;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  border-color: #d4c7f7;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
 }
