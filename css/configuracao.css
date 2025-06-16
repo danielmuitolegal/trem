@@ -1,36 +1,36 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 nav {
-  background-color: #4f378a;
-  color: white;
-  gap: 3%;
-  padding: 10px;
-  justify-content: space-between;
-  white-space: nowrap;
-  font-size: 70%;
+    background-color: #4f378a;
+    color: white;
+    gap: 3%;
+    padding: 10px;
+    justify-content: space-between;
+    white-space: nowrap;
+    font-size: 70%;
 }
 
 #textnav {
-  color: #FFFF;
-  text-decoration: none;
+    color: #FFFF;
+    text-decoration: none;
 }
 
 #select {
@@ -39,17 +39,30 @@ nav {
 }
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
 header {
-  background-color: #eaddff;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.5em;
-  color: #4f378a; 
+    background-color: #eaddff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #4f378a;
 
- 
- 
 
+
+
+}
+
+header i:hover {
+    cursor: pointer;
+}
+
+header input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
 }
