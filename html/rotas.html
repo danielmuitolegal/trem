@@ -5,38 +5,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestão de Rotas Ferroviárias</title>
-    <link rel="stylesheet" href="/css/rotas.css" />
+    <link rel="stylesheet" href="../css/rotas.css" />
+</head>
+
+
 </head>
 
 <body>
-    <main class="frame">
-        <header>
-            <h1>Gestão de Rotas Ferroviárias</h1>
-        </header>
 
-<<<<<<< HEAD
-            <h3>Trajeto em manutenção</h3>
-            <br>
-            <h4>Informe ao maquinista</h4>
+    <nav class="flex">
+        <a id="select" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a>
+        <a id="textnav" href="">GESTÃO DE ROTAS</a>
+        <a id="textnav" href="">MANUTENÇÃO</a>
+        <a id="textnav" href="">RELATÓRIOS</a>
+        <a id="textnav" href="">ALERTAS</a>
+        <div class="settings">
+            <a href="">⚙️</a>
         </div>
-=======
-        <section class="rota">
-            <img src="/img/Plot-multiple-stops-on-Google-Maps.png" alt="Mapa da Rota" />
-            <h2>Rota Central - Linha Azul</h2>
-            <p>Status: <strong>Em manutenção</strong></p>
-            <button type="submit">Informar ao Maquinista</button>
-            <h4>Aviso: Trajeto parcialmente bloqueado por obras.</h4>
-        </section>
+    </nav>
+    <div class="header">
+        <h2>Formulário de edição de rotas:</h2>
+        <form>
+            <label for="numero-rota">Número da rota</label>
+            <input type="text" id="numero-rota" name="numero-rota" placeholder="Número da rota" />
+            <br>
+            <label for="nome-rota">Paradas</label>
+            <input type="text" id="nome-rota" name="nome-rota" placeholder="Paradas" />
+            <br>
+            <label for="horario-saida">Horários</label>
+            <input type="time" id="horario-saida" name="Horários" />
+            <br>
+            <label for="nome-cód">Cód. Funcionario</label>
+            <input type="text" id="data-rota" name="Cód. funcionário " />
+<br>
+            <button type="submit">Salvar</button>
+            <button type="reset">Cancelar</button>
 
-        <section class="rota">
-            <img src="/img/Plot-multiple-stops-on-Google-Maps.png" alt="Mapa da Rota" />
-            <h2>Rota Norte - Linha Verde</h2>
-            <p>Status: <strong>Operando normalmente</strong></p>
-            <button type="submit">Redirecionar Tráfego</button>
-            <h4>Funcionamento pleno.</h4>
-        </section>
->>>>>>> 8bfa5809ac903a14943be506190d970ad6b06cdf
-    </main>
+    </div>
+
+
+
+
+
 </body>
 
 </html>
