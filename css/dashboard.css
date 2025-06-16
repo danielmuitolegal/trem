@@ -21,179 +21,31 @@ body {
 nav {
   background-color: #4f378a;
   color: white;
-  justify-content: space-between;
+  justify-content: baseline;
+  gap: 3%;
   padding: 10px;
   white-space: nowrap;
   font-size: 70%;
-
 }
 
-#inicio {
-  color: #cfb5f8;
+#textnav {
+  color: #FFFF;
   text-decoration: none;
+}
+
+#select {
+    color: #cfb5f8;
+    text-decoration: none;
 }
 
 .flex {
   display: flex;
 }
 
-.macaco {
-  gap: 10%;
-  padding-right: 10px;
+.settings {
 }
 
 .macaco a {
   text-decoration: none;
   color: white;
-}
-
-header {
-  background-color: #eaddff;
-}
-
-.passagem {
-  padding: 20px;
-  border-radius: 10px;
-  width: 95%;
-}
-
-.passagem p {
-  padding-bottom: 2%;
-  color: #4f378a;
-}
-
-.passagem label {
-  color: #4f378a;
-  font-size: 95%;
-}
-
-.passagem input {
-  width: 90%;
-  border-style: none;
-  color: grey;
-}
-
-.passagem select {
-  border-style: none;
-  color: grey;
-}
-
-.everton {
-  display: flex;
-  justify-content: center;
-}
-
-.l,
-.r {
-  flex-direction: column;
-  display: flex;
-  background-color: white;
-  margin-bottom: 2%;
-  padding: 2%;
-  width: 50%;
-}
-
-.l {
-  border-radius: 999px 0px 0px 999px;
-}
-
-.r {
-  margin-left: 1%;
-  border-radius: 0px 999px 999px 0px;
-}
-
-.butao {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2%;
-  gap: 2%;
-  margin: auto 2% 0% 2%;
-}
-
-.butao button {
-  background-color: #4f378a;
-  color: white;
-  border-radius: 999px;
-  padding: 0.5% 2%;
-  border-style: none;
-  font-size: 75%;
-}
-
-.dest {
-  margin-bottom: 35%;
-}
-
-main {
-  background-color: #4f378a;
-  padding-bottom: 5%;
-  justify-content: center;
-  align-items: center;
-}
-
-main p {
-  padding: 6% 0% 3% 3%;
-  color: #eaddff;
-  font-size: 140%
-}
-
-.promocao {
-  text-align: center;
-}
-
-.promocao img {
-  width: 90%;
-  margin: 7% 0% 0.5% 0%;
-  border-radius: 10px;
-}
-
-footer {
-  background-color: #eaddff;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-footer p {
-  padding: 3% 0% 3% 3%;
-  color: #4f378a;
-}
-
-@media (max-width: 900px) {
-  body {
-    overflow-y: hidden;
-  }
-  .promocao {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .promocao img {
-    width: 70%;
-    margin: 2px
-  }
-}
-
-@media (min-width: 900px) {
-  body {
-    overflow-y: scroll;
-  }
-
-  main {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  main p {
-    text-align: center;
-  }
-
-  .promocao {
-    display: flex;
-  }
-
-  .promocao img {
-    width: 90%;
-  }
 }
