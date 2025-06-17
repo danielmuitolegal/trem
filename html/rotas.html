@@ -14,39 +14,82 @@
 <body>
 
     <nav class="flex">
-        <a id="select" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a>
-        <a id="textnav" href="">GESTÃO DE ROTAS</a>
+        <a id="textnav" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a>
+        <a id="select" href="">GESTÃO DE ROTAS</a>
         <a id="textnav" href="">MANUTENÇÃO</a>
         <a id="textnav" href="">RELATÓRIOS</a>
         <a id="textnav" href="">ALERTAS</a>
         <div class="settings">
-            <a href="">⚙️</a>
+            <a href="">⚙</a>
         </div>
     </nav>
-    <div class="header">
-        <h2>Formulário de edição de rotas:</h2>
-        <form>
-            <label for="numero-rota">Número da rota</label>
-            <input type="text" id="numero-rota" name="numero-rota" placeholder="Número da rota" />
-            <br>
-            <label for="nome-rota">Paradas</label>
-            <input type="text" id="nome-rota" name="nome-rota" placeholder="Paradas" />
-            <br>
-            <label for="horario-saida">Horários</label>
-            <input type="time" id="horario-saida" name="Horários" />
-            <br>
-            <label for="nome-cód">Cód. Funcionario</label>
-            <input type="text" id="data-rota" name="Cód. funcionário " />
-<br>
-            <button type="submit">Salvar</button>
-            <button type="reset">Cancelar</button>
+    <main>
+        <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228988.54673061252!2d-48.9628813!3d-26.263414550000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dea3f39db1ab37%3A0xbc4b989df161e9fa!2sJoinville%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1750073625717!5m2!1spt-BR!2sbr"
+                    width="100%" height="450px" style="border:0; position: relative;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        <div>
+            <h2>Formulário de edição de rotas:</h2>
+            <form>
+                <label for="numero-rota"></label>
+                <input type="text" id="numero-rota" name="numero-rota" placeholder="Número da rota" />
+                <br>
+                <label for="nome-rota"></label>
+                <input type="text" id="nome-rota" name="nome-rota" placeholder="Paradas" />
+                <br>
+                <label for="horario-saida"></label>
+                <input type="text" id="horario-saida" name="Horários" placeholder="Horários" />
+                <br>
+                <label for="nome-cód"></label>
+                <input type="text" id="data-rota" name="Cód. funcionário " placeholder="Cód.Funcionario" />
+                <br>
+                <button type="submit">Salvar</button>
+                <button type="reset">Cancelar</button>
+            </form>
+        </div>
+        <div>
+            <h2>Ajuste por demandas:</h3>
+            <form>
+                <label for="Número de rotas"></label>
+                <input type="text" id="numero-rotas" name="numero-rotas" placeholder="Número de rotas" />
+                <br>
+                <label for="Descrição da exeção de rotas"></label>
+                <input type="text" id="descricao-execao" name="descricao-execao"
+                    placeholder="Descrição da exeção de rotas" />
+                <br>
+                <label for="data-execao"></label>
+                <input type="text" id="data-execao" name="data-execao" placeholder="Data (Feriados e eventos)" />
+                <br>
+                <label for="Cód. funcionário"></label>
+                <input type="text" id="cod-funcionario" name="cod-funcionario" placeholder="Cód. funcionário" />
+                <br>
+                <button type="submit">Salvar</button>
+                <button type="reset">Cancelar</button>
 
-    </div>
 
 
+            </form>
+            <div>
+                <h2>Redirecionamento em tempo real</h4>
+                <form>
+                    <label for="Número do trem"></label>
+                    <input type="text" id="numero-trem" name="numero-trem" placeholder="Número do trem" />
+                    <br>
+                    <label for="Nova rota"></label>
+                    <input type="text" id="nova-rota" name="nova-rota" placeholder="Nova rota" />
+                    <br>
+                    <label for="Cód. funcionário"></label>
+                    <input type="text" id="cod-funcionario-redirecionamento" name="cod-funcionario-redirecionamento"
+                        placeholder="Cód. funcionário" />
 
+                    <br>
+                    <button type="submit">Confirmar</button>
 
-
+                </form>
+            </div>
+    </main>
 </body>
 
 </html>
