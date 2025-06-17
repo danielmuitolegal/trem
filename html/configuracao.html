@@ -1,42 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - funcionário</title>
+    <title>Painel do Funcionário</title>
     <link rel="stylesheet" href="/css/configuracao.css">
 </head>
+
 <body>
-    <nav class="flex">
-<<<<<<< HEAD
-        <a id="select" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a>
-        <a id="textnav" href="">GESTÃO DE ROTAS</a>
-        <a id="textnav" href="">MANUTENÇÃO</a>
-        <a id="textnav" href="">RELATÓRIOS</a>
-        <a id="textnav" href="">ALERTAS </a>
-=======
-        <a id="select" href="http://127.0.0.1:3000/html/dashboard.html">INÍCIO</a> 
-        <a id="textnav" href="/html/rotas.html">GESTÃO DE ROTAS</a>
-        <a id="textnav" href="/html/manutencao.html">MANUTENÇÃO</a>
-        <a id="textnav" href="/html/relatorios.html">RELATÓRIOS</a>
-        <a id="textnav" href="/html/">ALERTAS</a> 
->>>>>>> 0eb7a730ecf48454608ed330648e91008dab1aa1
-    </nav>
-
-    <header class="flex">
-
-        <input type="Pesquisa" id="Pesquisa" placeholder="Digite a configuração procurada"><i>🔍</i>
+    <header>
+        <nav>
+            <ul>
+                <li>INÍCIO</li>
+                <li>GESTÃO DE ROTAS</li>
+                <li>MANUTENÇÃO</li>
+                <li>RELATÓRIOS</li>
+                <li>ALERTAS</li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+                <input type="text" placeholder="Digite a configuração procurada...">
+                <span class="search-icon">🔍</span>
+            </div>
     </header>
 
     <main>
-        
+        <section class="card">
+            <h2>Informações do Funcionário</h2>
+            <p><strong>Nome completo:</strong> Lucas Fernandes da Silva</p>
+            <p><strong>E-mail corporativo:</strong> lucas.fernandes@expressofunc.com</p>
+            <p><strong>Cód. Funcionário:</strong> 000876</p>
+            <p><strong>Cargo:</strong> Técnico de Manutenção</p>
+            <p><strong>Setor:</strong> Operações – Manutenção Preventiva</p>
+        </section>
+
+        <section class="card">
+            <h2>Permissões de Acesso</h2>
+            <p>Acesso concedido a:</p>
+            <ul class="permissoes">
+                <li class="ativo">☑ Gestão de Rotas</li>
+                <li class="ativo">☑ Painel de Manutenção</li>
+                <li>☐ Relatórios e Análises</li>
+                <li>☐ Envio de Alertas</li>
+                <li>☐ Cadastro de Novos Funcionários</li>
+            </ul>
+            <button>SOLICITAR ALTERAÇÃO DE PERMISSÕES</button>
+        </section>
+
+        <section class="card">
+            <h2>Histórico de Ações</h2>
+            <ul class="historico">
+                <li>📌 05/06/2025 – Registrou manutenção preventiva (Trem 308)</li>
+                <li>📌 01/06/2025 – Atualizou status de equipamento (freio inspecionado)</li>
+                <li>📌 28/05/2025 – Confirmou inspeção da linha Leste</li>
+            </ul>
+            <button>VER MAIS DETALHES</button>
+        </section>
+
+        <section class="card">
+            <h2>Segurança da conta</h2>
+            <p><strong>Alterar senha:</strong></p>
+            <p>Última alteração: 22/04/2025 às 14:37</p>
+            <button>ALTERAR SENHA</button>
+        </section>
     </main>
 
     <footer>
-        <h4>SUPORTE TÉCNICO INTERNO</h4>
-        <p>E-mail: suporte@expressofunc.com</p>
-        <p>Ramal: 2048</p>
-        <p>Atendimento: Segunda a sexta, das 9h às 17h</p>
+        <div class="footer-title">SUPORTE TÉCNICO INTERNO</div>
+        <div class="footer-content">
+            <p>📧 E-mail: suporte@expressofunc.com</p>
+            <p>📞 Ramal: 2048</p>
+            <p>🕑 Atendimento: Segunda a sexta, das 9h às 17h</p>
+        </div>
     </footer>
 </body>
+
 </html>
