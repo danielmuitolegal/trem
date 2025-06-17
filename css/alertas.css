@@ -13,18 +13,28 @@ header {
     justify-content: space-between;
 }
 
-nav ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+nav {
+  background-color: #4f378a;
+  color: white;
+  gap: 3%;
+  padding: 10px;
+  justify-content: space-between;
+  white-space: nowrap;
+  font-size: 70%;
 }
 
-nav ul li {
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+#textnav {
+  color: #FFFF;
+  text-decoration: none;
+}
+
+#select {
+  color: #cfb5f8;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
 }
 
 .alert-banner {
